@@ -13,6 +13,8 @@ counters.forEach((counter) => {
         if (currentNumber < targetNumber) {
             counter.innerText = Math.ceil(currentNumber + increment);
             setTimeout(updateCounter, 1);
+        } else {
+            counter.innerText = targetNumber;
         }
     }
 
